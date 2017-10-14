@@ -1,9 +1,10 @@
     <section class="head-top">
       <div class="container">
+      {% for social in site.data.top-social %}
         <div class="row">
           <aside class="col-md-12">
-            <div class="phone">+91 98 84 901414 / +91 87 54 02249</div>
-            <div class="location">#6, KMS Nagar, Bharthipuram, Dindigul - 624 003, Tamilnadu, India.</div>
+            <div class="phone">{{social.phone-number}}</div>
+            <div class="location">{{social.address}}</div>
           </aside>
         </div>
       </div>
@@ -11,7 +12,8 @@
     <section class="head-bottom">
       <div class="container">
         <div class="row">
-          <aside class="col-md-5"><a href="" class="logo">C.R.I. PUMPS</a></aside>
-            <aside class="col-md-3"><div class="head-box"><div class="icon"><img src="images/head-phone.png" alt=""/></div><div class="text">Call Us <br /><span>+91 451 2401233</span></div></div></aside>
-            <aside class="col-md-4"><div class="head-box"><div class="icon"><img src="images/head-email.png" alt=""/></div><div class="text">Email Us <br /><span>info@grindcutabrasives.com</span></div></div></aside>
+          <aside class="col-md-5"><a href="" class="logo">{{social.logo}}</a></aside>
+            <aside class="col-md-3"><div class="head-box"><div class="icon"><img src="images/head-phone.png" alt=""/></div><div class="text">Call Us <br /><span>{{social.phone-number}}</span></div></div></aside>
+            <aside class="col-md-4"><div class="head-box"><div class="icon"><img src="images/head-email.png" alt=""/></div><div class="text">Email Us <br /><span>{{social.email}}</span></div></div></aside>
         </div>
+        {% endfor %}
