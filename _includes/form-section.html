@@ -2,8 +2,9 @@
     	<aside class="img-holder"><img src="{{site.baseurl}}/images/img-01.png" class="img-fluid" alt=""/></aside>
     	<div class="container">
         	<div class="row">
+          {% for form in site.data.form-section %}
             	<aside class="col-md-5">
-                	<h1>book free appointment</h1>
+                	<h1>{{form.contact-title}}</h1>
                 	<div class="form-box">
                       <div class="row">
                         <aside class="col-md-6">
@@ -27,6 +28,7 @@
                       </div>
                     </div>
                 </aside>
+                {% endfor %}
             </div>
          </div>
     </section>
