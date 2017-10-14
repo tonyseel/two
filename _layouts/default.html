@@ -24,8 +24,52 @@
 {{content}}
 
 
-{% include footer-section.html %}
-
+  <footer>
+    <div class="container">
+      <div class="row">
+          <aside class="col-md-4">
+              <div class="foot-box">
+                  <aside class="social-box">
+                      <ul class="social-media">
+                          <li>Follow Us</li>
+                            <li><a href="#"><img src="{{site.baseurl}}/images/facebook.png" alt=""/></a></li>
+                            <li><a href="#"><img src="{{site.baseurl}}/images/twitter.png" alt=""/></a></li>
+                            <li><a href="#"><img src="{{site.baseurl}}/images/youtube.png" alt=""/></a></li>
+                            <li><a href="#"><img src="{{site.baseurl}}/images/google.png" alt=""/></a></li>
+                        </ul>
+                    </aside>
+                     {% for social in site.data.top-social %}
+                  <aside class="address">
+                        <div class="location">{{social.address}}</div>
+                        <div class="phone">{{social.phone-number}}</div>
+                        <div class="mobile">{{social.mobile-number}}</div>
+                        <div class="email">{{social.mobile-number}}</div>
+                    </aside>
+                  {% endfor %}
+                </div>
+            </aside>
+            <aside class="col-md-4">
+              <h3>our products</h3>
+                <ul class="foot-links">
+                  <li>Flap Discs</li>
+                    <li>PSA Discs</li>
+                    <li>Nut Inserted Wheels</li>
+                    <li>Rail Cutting Wheels</li>
+                    <li>Coated Discs</li>
+                    <li>Flap Wheels</li>
+                    <li>Cutting Wheels</li>
+                </ul>
+            </aside>
+            <aside class="col-md-4">
+              <h3>Facebook</h3>
+                <div class="fb=page"><img src="{{site.baseurl}}/images/fb-page.jpg" class="img-fluid" alt=""/></div>
+            </aside>
+        </div>
+        <div class="row">
+          <aside class="col-md-12 text-center copy-rights">Copyright 2016 &copy; Grindcut Abrasives. All Rights Reserved.</aside>
+        </div>
+    </div>
+  </footer>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> 
 <script src="{{site.baseurl}}/js/popper.min.js"></script> 
