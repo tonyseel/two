@@ -1,0 +1,20 @@
+# site setting
+title: two
+baseurl: /two
+favicon: favicon.png
+logo:
+banner: home-banner.jpg  
+markdown: kramdown
+exclude: ['README.md']
+permalink: pretty #to remove .html
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+#Gems
+gems: [jekyll-paginate]
+paginate: 60
+paginate_path: "/blog/page:num/"
+  
+include: ['_pages']
+
