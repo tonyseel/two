@@ -1,22 +1,24 @@
    <section class="product-fluid">
       <div class="container">
+       {% for product in site.data.product-section %}
         <div class="row">
           <aside class="col-md-12">
-            <h1 class="text-center">our products</h1>
-            <h4 class="text-center">Nullam sed quam nunc. Duis ac ex a quam pulvinar iaculis. Fusce nec erat augue. Phasellus gravida auctor pellentesque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</h4>
+            <h1 class="text-center">{{product.product-title}}</h1>
+            <h4 class="text-center">{{product.product-content}}</h4>
           </aside>
         </div>
         <div class="row">
           <aside class="col-md-4">
-            <div class="product-item"><img src="{{site.baseurl}}/images/product.jpg" class="img-fluid" alt=""/></div>
+            <div class="product-item"><img src="{{site.baseurl}}/images/{{product.product-one}}" class="img-fluid" alt=""/></div>
           </aside>
           <aside class="col-md-4">
-            <div class="product-item"><img src="{{site.baseurl}}/images/product.jpg" class="img-fluid" alt=""/></div>
+            <div class="product-item"><img src="{{site.baseurl}}/images/{{product.product-two}}" class="img-fluid" alt=""/></div>
           </aside>
           <aside class="col-md-4">
-            <div class="product-item"><img src="{{site.baseurl}}/images/product.jpg" class="img-fluid" alt=""/></div>
+            <div class="product-item"><img src="{{site.baseurl}}/images/{{product.product-three}}" class="img-fluid" alt=""/></div>
           </aside>
         </div>
+        {% endfor %}
         <div class="row">
             <div class="col-md-12">
                 <div class="navigation">

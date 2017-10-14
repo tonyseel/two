@@ -2,10 +2,12 @@
       <div class="container">
           <div class="row">
               <aside class="col-md-3"><img src="{{site.baseurl}}/images/trip-01.png" alt=""/></aside>
+              {% for blockcontact in site.data.block-contact %}
               <aside class="col-md-6">
-                    <h1>catalogue download</h1>
-                    <p>Leaf Through Our E-Brochures For A Detailed Product Information.</p>
+                    <h1>{{blockcontact.contact-title}}</h1>
+                    <p>{{blockcontact.contact-content}}</p>
                 </aside>
+                {% endfor %}
                 <aside class="col-md-3">
                   <a href="#" class="download-btn">contact</a>
                 </aside>
