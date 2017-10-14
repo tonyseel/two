@@ -1,46 +1,35 @@
     <section class="why-fluid">
       <div class="container">
+      {% for product in site.data.product-section %}
         <div class="row">
           <aside class="col-md-12">
-            <h1 class="text-center">why choose us</h1>
-            <h4 class="text-center">Nullam sed quam nunc. Duis ac ex a quam pulvinar iaculis. Fusce nec erat augue. Phasellus gravida auctor pellentesque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</h4>
+            <h1 class="text-center">{{product.about-title}}</h1>
+            <h4 class="text-center">{{product.about-content}}</h4>
           </aside>
         </div>
         <div class="row">
           <aside class="col-md-3">
-            <div class="icon-holder text-center"><img src="{{site.baseurl}}/images/icon-01.jpg" alt=""></div>
-            <h2 class="text-center">strict quality standards</h2>
-            <p class="text-center">Aliquam sagittis elit et lorem interdum, at laoreet diam tempor. Sed diam ante, faucibus at libero nec</p>
+            <div class="icon-holder text-center"><img src="{{site.baseurl}}/images/{{product.blockone-img}}" alt=""></div>
+            <h2 class="text-center">{{product.blockone-title}}</h2>
+            <p class="text-center">{{product.blockone-content}}</p>
           </aside>
           <aside class="col-md-3">
-            <div class="icon-holder text-center"><img src="{{site.baseurl}}/images/icon-01.jpg" alt=""></div>
-            <h2 class="text-center">best services</h2>
-            <p class="text-center">Aliquam sagittis elit et lorem interdum, at laoreet diam tempor. Sed diam ante, faucibus at libero nec</p>
+            <div class="icon-holder text-center"><img src="{{site.baseurl}}/images/{{product.blocktwo-img}}" alt=""></div>
+            <h2 class="text-center">{{product.blocktwo-title}}</h2>
+            <p class="text-center">{{product.blocktwo-content}}</p>
           </aside>
           <aside class="col-md-3">
-            <div class="icon-holder text-center"><img src="{{site.baseurl}}/images/icon-01.jpg" alt=""></div>
-            <h2 class="text-center">reasonable price</h2>
-            <p class="text-center">Aliquam sagittis elit et lorem interdum, at laoreet diam tempor. Sed diam ante, faucibus at libero nec</p>
+            <div class="icon-holder text-center"><img src="{{site.baseurl}}/images/{{product.blockthree-img}}" alt=""></div>
+            <h2 class="text-center">{{product.blockthree-title}}</h2>
+            <p class="text-center">{{product.blockthree-content}}</p>
           </aside>
           <aside class="col-md-3">
-            <div class="icon-holder text-center"><img src="{{site.baseurl}}/images/icon-01.jpg" alt=""></div>
-            <h2 class="text-center">quick support</h2>
-            <p class="text-center">Aliquam sagittis elit et lorem interdum, at laoreet diam tempor. Sed diam ante, faucibus at libero nec</p>
+            <div class="icon-holder text-center"><img src="{{site.baseurl}}/images/{{product.blockfour-img}}" alt=""></div>
+            <h2 class="text-center">{{product.blockfour-title}}</h2>
+            <p class="text-center">{{product. blockfour-content}}</p>
           </aside>
         </div>
       </div>
+      {% endfor %}
     </section>
-     <section class="spl-fluid">
-      <div class="container">
-          <div class="row">
-              <aside class="col-md-3"><img src="{{site.baseurl}}/images/trip-01.png" alt=""/></aside>
-              <aside class="col-md-6">
-                    <h1>catalogue download</h1>
-                    <p>Leaf Through Our E-Brochures For A Detailed Product Information.</p>
-                </aside>
-                <aside class="col-md-3">
-                  <a href="#" class="download-btn">download</a>
-                </aside>
-            </div>
-        </div>
-    </section>
+    
