@@ -525,8 +525,9 @@ ul.posts-archive li {
     padding-bottom: 35px;list-style: none;
 }
 div.post-thumb {
-   padding:0px;
+   padding:0px;display:inline-block;
 }
+div.post-thumb img{width:100%;}
 div.post-thumb p{font-size: 14px;    color: #ff0303;} 
 div.post-excerpt {
     color: #666;
@@ -534,7 +535,8 @@ div.post-excerpt {
     line-height: 1.75em;
     overflow: hidden;
     margin-top: 5px;
-    margin-bottom: 0px;
+    margin-bottom: 0px;    float: right;
+    padding-left: 30px;
 }
 div.post-excerpt {font-size:20px;line}
 div.blog p {
