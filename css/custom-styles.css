@@ -504,6 +504,7 @@ ul.social-media li a {
 	}
 }
 
+
 /*--blog page start --*/
 div.intro-archives {
     border-bottom: solid 1px #eee;
@@ -511,7 +512,7 @@ div.intro-archives {
     padding: 0 0 20px;
 }
 .intro h1{
-       color:#ec3237;
+       color: #ec3237;
     font-size: 41px;
     font-weight: 500;
 }
@@ -549,7 +550,7 @@ ul.posts-archive h2 {
     font-size: 30px;
     font-weight: bold;
     display: inline;
-    line-height: 2.7em;color:#ec3237!important;text-decoration:none;
+    line-height: 2.7em;color:#ec3237!important
 }
 span.more {
     display: block;
