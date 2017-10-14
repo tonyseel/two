@@ -15,9 +15,11 @@
             </aside>
               <aside class="col-md-3">
               <ul class="social-media">
-                    <li><a href="#"><img src="images/facebook.png" alt=""/></a></li>
-                    <li><a href="#"><img src="images/twitter.png" alt=""/></a></li>
-                    <li><a href="#"><img src="images/youtube.png" alt=""/></a></li>
-                    <li><a href="#"><img src="images/google.png" alt=""/></a></li>
+              {% for social in site.data.social-link %}
+                    <li><a href="{{social.facebook-url}}"><img src="{{site.baseurl}}/images/facebook.png" alt=""/></a></li>
+                    <li><a href="{{social.twitter-url}}"><img src="{{site.baseurl}}/images/twitter.png" alt=""/></a></li>
+                    <li><a href="{{social.youtube-url}}"><img src="{{site.baseurl}}/images/youtube.png" alt=""/></a></li>
+                    <li><a href="{{social.googleplus-url}}"><img src="{{site.baseurl}}/images/google.png" alt=""/></a></li>
+                    {% endfor %}
                  </ul>
             </aside>s

@@ -37,7 +37,7 @@
                             <li><a href="#"><img src="{{site.baseurl}}/images/google.png" alt=""/></a></li>
                         </ul>
                     </aside>
-                     {% for social in site.data.top-social %}
+                     {% for social in site.data.social-link %}
                   <aside class="address">
                         <div class="location">{{social.address}}</div>
                         <div class="phone">{{social.phone-number}}</div>
@@ -55,10 +55,12 @@
                   {% endfor %}  
                 </ul>
             </aside>
+            {% for social in site.data.social-link %}
             <aside class="col-md-4">
               <h3>Facebook</h3>
-                <div class="fb=page"><img src="{{site.baseurl}}/images/fb-page.jpg" class="img-fluid" alt=""/></div>
+                <div class="fbpage"><img src="{{site.baseurl}}/images/{{social.footer-facebook-img}}" class="img-fluid" alt=""/></div>
             </aside>
+             {% endfor %}
         </div>
         <div class="row">
           <aside class="col-md-12 text-center copy-rights">Copyright 2016 &copy; Grindcut Abrasives. All Rights Reserved.</aside>
