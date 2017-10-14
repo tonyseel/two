@@ -50,9 +50,9 @@
             <aside class="col-md-4">
               <h3>Blog</h3>
                 <ul class="foot-links">
-
-                  <li>Flap Discs</li>
-                    
+                 {% for post in site.post %}
+                  <li><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>
+                  {% endfor %}  
                 </ul>
             </aside>
             <aside class="col-md-4">
