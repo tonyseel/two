@@ -6,71 +6,29 @@
 <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
 <![endif]-->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/custom-styles.css">
+<link rel="stylesheet" href="{{site.baseurl}}/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{site.baseurl}}/css/custom-styles.css">
 </head>
 <body>
 <div class="">
-  <header>
-    {% include top-social.html %}
-        <div class="row menu-bar">
-     {% include menu-section.html %}
+<header>
+{% include top-social.html %}
+<div class="row menu-bar">
+{% include menu-section.html %}
           
-        </div>
-      </div>
-    </section>
-  </header>
+</div>
+</div>
+</section>
+</header>
   
 {{content}}
 
 
-  <footer>
-  	<div class="container">
-    	<div class="row">
-        	<aside class="col-md-4">
-            	<div class="foot-box">
-                	<aside class="social-box">
-                    	<ul class="social-media">
-                        	<li>Follow Us</li>
-                            <li><a href="#"><img src="images/facebook.png" alt=""/></a></li>
-                            <li><a href="#"><img src="images/twitter.png" alt=""/></a></li>
-                            <li><a href="#"><img src="images/youtube.png" alt=""/></a></li>
-                            <li><a href="#"><img src="images/google.png" alt=""/></a></li>
-                        </ul>
-                    </aside>
-                	<aside class="address">
-                        <div class="location">#6, KMS Nagar, Bharathipuram, Dindigul - 624 003, Tamil Nadu</div>
-                        <div class="phone">+91 451 2401233</div>
-                        <div class="mobile">+91 98 84 901414 / +91 87 54 042249</div>
-                        <div class="email">info@grindcutabrasives.com</div>
-                    </aside>
-                </div>
-            </aside>
-            <aside class="col-md-4">
-            	<h3>our products</h3>
-                <ul class="foot-links">
-                	<li>Flap Discs</li>
-                    <li>PSA Discs</li>
-                    <li>Nut Inserted Wheels</li>
-                    <li>Rail Cutting Wheels</li>
-                    <li>Coated Discs</li>
-                    <li>Flap Wheels</li>
-                    <li>Cutting Wheels</li>
-                </ul>
-            </aside>
-            <aside class="col-md-4">
-            	<h3>Facebook</h3>
-                <div class="fb=page"><img src="images/fb-page.jpg" class="img-fluid" alt=""/></div>
-            </aside>
-        </div>
-        <div class="row">
-        	<aside class="col-md-12 text-center copy-rights">Copyright 2016 &copy; Grindcut Abrasives. All Rights Reserved.</aside>
-        </div>
-    </div>
-  </footer>
+{% include footer-section.html %}
+
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> 
-<script src="js/popper.min.js"></script> 
-<script src="js/bootstrap.min.js"></script>
+<script src="{{site.baseurl}}/js/popper.min.js"></script> 
+<script src="{{site.baseurl}}/js/bootstrap.min.js"></script>
 </body>
 </html>
