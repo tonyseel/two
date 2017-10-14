@@ -1,16 +1,17 @@
 <section class="client-fluid">
+  {% for client in site.data.client-section %}
     	<div class="container">
         	<div class="row">
     			<aside class="col-md-3">
-                	<h1>Clients</h1>
-                    <h4>Nullam sed quam nunc. Duis ac ex a quam pulvinar iaculis.</h4>
+                	<h1>{{client.client-title}}</h1>
+                    <h4>{{client.client-title-content}}</h4>
                 </aside>
                 <aside class="col-md-9">
                 	<ul class="client-list">
-                    	<li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                    	<li><img src="{{site.baseurl}}/images/{{client.client-one-img}}"></li>
+                        <li><img src="{{site.baseurl}}/images/{{client.client-two-img}}"></li>
+                        <li><img src="{{site.baseurl}}/images/{{client.client-three-img}}"></li>
+                        <li><img src="{{site.baseurl}}/images/{{client.client-four-img}}"></li>
                     </ul>
                 </aside>
             </div>
@@ -19,8 +20,8 @@
                 	<div class="testimonial-box">
                     	<div class="row">
                         	<aside class="col-md-10">
-                            	<div class="testimonials-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet ultrices tincidunt. Donec faucibus nisi a nibh luctus, id interdum est dapibus. Praesent sit amet porttitor turpis. Donec imperdiet accumsan enim, in aliquet odio cursus et. Aliquam erat volutpat.</div>
-                                <div class="testimonials-person">Jhon Mark, <span>Chennai</span></div>
+                            	<div class="testimonials-details">{{client.client-commemt}}</div>
+                                <div class="testimonials-person"> {{client.client-name}}<span>{{client.client-location}}</span></div>
                             </aside>
                             <aside class="col-md-2">
                             	<div class="photo">&nbsp;</div>
@@ -30,4 +31,5 @@
                 </aside>
             </div>
          </div>
+  {% endfor %}
     </section>
