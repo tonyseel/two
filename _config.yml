@@ -1,6 +1,6 @@
 # site setting
 title: two
-baseurl: /two
+baseurl: http://two.hatkit.com
 favicon: favicon.png
 logo:
 banner: home-banner.jpg  
