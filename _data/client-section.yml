@@ -1,9 +1,9 @@
 - client-title: Clients
   client-title-content: Nullam sed quam nunc. Duis ac ex a quam pulvinar iaculis.
-  client-one-img: antivirus-plus-firewall.png
-  client-two-img: antivirus-plus-firewall.png
-  client-three-img: antivirus-plus-firewall.png
-  client-four-img: antivirus-plus-firewall.png
+  client-one-img: core1.png
+  client-two-img: core2.png
+  client-three-img: core3.png
+  client-four-img: core4.png
   client-commemt: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet ultrices tincidunt. Donec faucibus nisi a nibh luctus, id interdum est dapibus. Praesent sit amet porttitor turpis. Donec imperdiet accumsan enim, in aliquet odio cursus et. Aliquam erat volutpat.
   client-name: Jhon Mark,
   client-location: chennai
